@@ -1,5 +1,14 @@
  class Main {
   public static void main(String[] args) {
+    String parolaChiave;
+    System.out.println("Inserisci la parola chiave!");
+   try{
+    BufferedReader br = new BufferedReader(new InputStreamerReader(System.in));
+    parolaChiave = br.readline();
+   }
+   catch (IOException io){
+    System.err.println("errore lettura dati tastiera");
+   }
     System.out.println("Cifriamo il nostro testo e trasformiamolo in un testo segreto!");
 
     
@@ -16,5 +25,6 @@
 
    System.out.println("Matrice popolata: ");
     m.printMatrix();
+   //commento nuovo 
   }
 }
